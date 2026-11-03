@@ -70,6 +70,14 @@ so every post must be safe to go live as-is.
 - Health awareness days and months (Canadian calendar), seasonal wellness, travel health checklist
 
 ## Media
-- Real photos/clips the owner provides go in media/. If a suitable one exists, set "photo" (cover + reel
-  background) and tile "photo" fields to use it. Prefer real photos over icons whenever available.
+- Product photos from quiickmedicine.ca live in media/products/ (refreshed weekly by a GitHub Action).
+  ALWAYS pick them with: python3 scripts/pick_photos.py <theme> <count>
+  Themes: cold-flu, pain, allergy, digestion, sleep, vitamin-d, immune, vitamins, skin, sun, eyes,
+  diabetes, first-aid, travel, heart, joints. The picker only returns safe OTC products.
+- Use product photos for "photo" (cover hero), the three tile "photo"s, and optionally a point "photo".
+  Tile and point labels must describe the CATEGORY that matches the photo (e.g. "Sinus relief"),
+  never the brand, and never a claim about that specific product.
+- Education/myth/local posts may use icons only, or product photos only when they genuinely fit.
+- Real pharmacy photos/clips the owner provides go in media/ (not media/products/); use them as
+  "bg_photo" for the reel background.
 - brand/generate.py renders everything; brand/example_content.json is a complete example.

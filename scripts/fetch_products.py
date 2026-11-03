@@ -87,6 +87,10 @@ for p in products:
     index.append(p)
 with open(os.path.join(OUT, "index.json"), "w") as fh:
     json.dump(index, fh, indent=1, ensure_ascii=False)
+import trim_whitespace
+for f in os.listdir(OUT):
+    if f.endswith(".jpg"):
+        trim_whitespace.trim(os.path.join(OUT, f))
 print("saved", sum(len(p["files"]) for p in index), "images for", len(index), "products")
 if not index:
     sys.exit(1)

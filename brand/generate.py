@@ -93,7 +93,7 @@ body{{width:var(--w);height:var(--h);font-family:M,sans-serif;color:var(--navy);
 .tile{{flex:1;text-align:center;border-right:2px solid #c9def5;padding:0 8px}}
 .tile:last-child{{border-right:none}}
 .tile .pic{{height:64px;display:flex;align-items:center;justify-content:center}}
-.tile .pic img{{max-height:64px;max-width:150px;object-fit:contain;border-radius:10px}}
+.tile .pic img{{height:64px;width:150px;object-fit:contain;border-radius:10px}}
 .tile .pic i{{font-size:54px;color:var(--blue)}}
 .tile p{{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:700;font-size:19px;line-height:1.15;margin-top:6px;background:var(--sky);border-radius:12px;padding:6px 8px}}
 .tag{{position:absolute;background:var(--yellow);transform:rotate(-6deg);padding:18px 30px;border-radius:8px 30px 8px 30px;
@@ -107,6 +107,8 @@ body{{width:var(--w);height:var(--h);font-family:M,sans-serif;color:var(--navy);
 .num{{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:var(--navy);color:#fff;font-weight:900}}
 .tip{{background:#fff;border-left:10px solid var(--yellow);border-radius:0 18px 18px 0;padding:22px 28px;font-weight:700;color:var(--navy);
   box-shadow:0 8px 20px rgba(10,58,117,.1)}}
+.card{{position:absolute;background:#fff;border-radius:34px;box-shadow:0 18px 40px rgba(10,58,117,.18);display:flex;align-items:center;justify-content:center;padding:28px;border:3px solid #e3eefb}}
+.card img{{width:100%;height:100%;object-fit:contain}}
 .page{{position:absolute;right:52px;top:58px;font-weight:800;font-size:24px;color:var(--blue);background:#fff;border:3px solid #c9def5;border-radius:30px;padding:8px 20px}}
 """
 
@@ -130,8 +132,8 @@ def page(body, w, h, logo_w=420):
 def hero_visual(c, x, y, size):
     ph = img(c.get("photo"))
     if ph:
-        return (f'<img class="photo" src="{ph}" style="left:{x}px;top:{y}px;width:{size}px;height:{size}px;border-radius:50% 50% 40% 50%;'
-                f'border:10px solid #fff;box-shadow:0 18px 40px rgba(10,58,117,.25)">')
+        return (f'<div class="hero" style="left:{x-20}px;top:{y-20}px;width:{size+40}px;height:{size+40}px"></div>'
+                f'<div class="card" style="left:{x+35}px;top:{y+35}px;width:{size-70}px;height:{size-70}px;transform:rotate(-3deg)"><img src="{ph}"></div>')
     s = size
     out = [f'<div class="hero" style="left:{x}px;top:{y}px;width:{s}px;height:{s}px">'
            f'<i class="ti ti-{e(c.get("hero_icon","pill"))}" style="font-size:{int(s*0.5)}px"></i></div>']
@@ -157,7 +159,7 @@ def cover(c, total):
 <div style="position:absolute;left:52px;top:236px;width:590px;display:flex;flex-direction:column;gap:14px">
 <div class="hl" style="font-size:74px">{hl}</div>
 <div class="sub" style="font-size:34px;margin-top:10px">{e(c["subhead"])}</div>
-<div class="intro" style="font-size:25px">{e(c["intro"])}</div></div>
+<div class="intro" style="font-size:25px;max-width:540px">{e(c["intro"])}</div></div>
 {hero_visual(c, 640, 260 if b else 200, 390)}
 <div class="icons" style="left:40px;top:640px;width:600px">{icons}</div>
 <div class="panel" style="left:40px;top:818px;width:690px;height:158px"><h4>{e(c["panel_title"])}</h4>{tiles}</div>
@@ -172,13 +174,13 @@ def point(c, p, n, total):
 <div class="blob" style="width:760px;height:760px;right:-260px;top:80px"></div>
 <img class="logo" src="{LOGO}" style="width:300px">
 <div class="page">{n} / {total}</div>
-<div style="position:absolute;right:70px;top:230px;width:330px;height:330px" class="hero"><i class="ti ti-{e(p.get("icon","check"))}" style="font-size:170px"></i></div>
+{(f'<div class="card" style="right:70px;top:220px;width:340px;height:340px;transform:rotate(3deg)"><img src="{img(p.get("photo"))}"></div>') if img(p.get("photo")) else (f'<div style="position:absolute;right:70px;top:230px;width:330px;height:330px" class="hero"><i class="ti ti-{e(p.get("icon","check"))}" style="font-size:170px"></i></div>')}
 <div class="num" style="position:absolute;left:52px;top:250px;width:110px;height:110px;font-size:60px">{n - 1}</div>
 <div class="hl" style="position:absolute;left:52px;top:390px;width:600px;font-size:68px">{e(p["title"])}</div>
 <div style="position:absolute;left:52px;top:540px;width:180px;height:12px;border-radius:12px;background:var(--yellow)"></div>
 <div class="intro" style="position:absolute;left:52px;top:580px;width:640px;font-size:34px">{e(p["body"])}</div>
 {tip}
-{band(930, 80, 27)}<div class="foot" style="top:1010px;height:70px"><span class="t" style="font-size:24px">{TAGLINE}</span><span class="d" style="font-size:13px;max-width:none;white-space:nowrap;padding-left:12px">{DISCLAIMER}</span></div>
+{band(930, 80, 27)}<div class="foot" style="top:1010px;height:70px"><span class="t" style="font-size:22px;white-space:nowrap">{TAGLINE}</span><span class="d" style="font-size:12px;max-width:none;white-space:nowrap;padding-left:12px">{DISCLAIMER}</span></div>
 """
     return page(body, 1080, 1080)
 
@@ -200,7 +202,7 @@ def closing(c, total):
     return page(body, 1080, 1080)
 
 def reel_frame(c, kind, p=None, n=0):
-    ph = img(c.get("photo"))
+    ph = img(c.get("bg_photo"))
     bg = (f'<img src="{ph}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">'
           f'<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,42,86,.35),rgba(7,42,86,.85))"></div>') if ph else \
          '<div style="position:absolute;inset:0;background:linear-gradient(170deg,#0b5fb0 0%,#0a3a75 55%,#072a56 100%)"></div>'
@@ -209,11 +211,11 @@ def reel_frame(c, kind, p=None, n=0):
            f'font-weight:800;font-size:34px;color:var(--navy)"><div>{PHONE} · {WEB}</div><div style="font-size:20px;font-weight:500;font-style:italic;margin-top:8px">{DISCLAIMER}</div></div>')
     if kind == "hook":
         mid = (f'<div class="hl" style="position:absolute;left:60px;right:60px;top:560px;font-size:104px;color:#fff">{e(c["reel_hook"])}</div>'
-               f'<div class="hero" style="left:340px;top:930px;width:400px;height:400px"><i class="ti ti-{e(c.get("hero_icon","pill"))}" style="font-size:200px"></i></div>'
+               + ((f'<div class="card" style="left:300px;top:930px;width:480px;height:400px;transform:rotate(-3deg)"><img src="{img(c.get("photo"))}"></div>') if img(c.get("photo")) else f'<div class="hero" style="left:340px;top:930px;width:400px;height:400px"><i class="ti ti-{e(c.get("hero_icon","pill"))}" style="font-size:200px"></i></div>') +
                f'<div style="position:absolute;left:60px;top:1360px;font-family:K;font-size:60px;color:var(--yellow)">Watch till the end</div>')
     elif kind == "point":
         mid = (f'<div class="num" style="position:absolute;left:60px;top:470px;width:150px;height:150px;font-size:84px;background:var(--yellow);color:var(--navy)">{n}</div>'
-               f'<i class="ti ti-{e(p.get("icon","check"))}" style="position:absolute;right:70px;top:440px;font-size:220px;color:rgba(255,255,255,.9)"></i>'
+               + ((f'<div class="card" style="right:60px;top:300px;width:420px;height:400px;transform:rotate(3deg)"><img src="{img(p.get("photo"))}"></div>') if img(p.get("photo")) else f'<i class="ti ti-{e(p.get("icon","check"))}" style="position:absolute;right:70px;top:440px;font-size:220px;color:rgba(255,255,255,.9)"></i>') +
                f'<div class="hl" style="position:absolute;left:60px;right:60px;top:720px;font-size:96px;color:#fff">{e(p["title"])}</div>'
                f'<div style="position:absolute;left:60px;right:60px;top:1000px;font-size:46px;font-weight:700;line-height:1.3;color:#e6f0fb">{e(p["body"])}</div>')
     else:
