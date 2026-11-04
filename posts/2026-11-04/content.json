@@ -1,0 +1,34 @@
+{
+ "topic": "Cold and flu myths vs facts",
+ "type": "myth",
+ "badge": {"line1": "November", "line2": "Cold & Flu Season"},
+ "headline": "Cold and flu",
+ "highlight": "Myth or fact?",
+ "subhead": "Swipe to test what you know.",
+ "intro": "Cold season brings lots of advice. Here's what's true, and when to ask your pharmacist.",
+ "hero_icon": "virus",
+ "photo": "media/products/teva-koffex-dm-dry-cough-relief-1.jpg",
+ "icons": [
+  {"icon": "wash", "label": "Wash your hands"},
+  {"icon": "bed", "label": "Rest and recover"},
+  {"icon": "droplet", "label": "Stay hydrated"}
+ ],
+ "panel_title": "Find it at Quiick Medicine",
+ "tiles": [
+  {"icon": "medicine-syrup", "label": "Cough relief", "photo": "media/products/teva-koffex-dm-dry-cough-relief-1.jpg"},
+  {"icon": "spray", "label": "Sinus relief", "photo": "media/products/mucinex-multi-action-cold-sinus-caplets-1.jpg"},
+  {"icon": "droplet", "label": "Mucus relief", "photo": "media/products/robitussin-liquid-mucus-phlegm-100-ml-1.jpg"}
+ ],
+ "cta_tag": "Ask our pharmacist!",
+ "points": [
+  {"icon": "snowflake", "title": "Myth: Cold air = a cold", "body": "Fact: Colds come from viruses. They spread more in winter because we spend more time indoors.", "tip": "Wash your hands often indoors."},
+  {"icon": "pill", "title": "Antibiotics for colds?", "body": "Fact: Antibiotics don't work on viruses like colds and flu. Ask us about symptom relief.", "tip": "Ask your pharmacist what fits."},
+  {"icon": "medicine-syrup", "title": "Myth: More is better", "body": "Fact: Two cold products can double up an ingredient. Read the label and ask us first.", "tip": "Check for overlapping ingredients.", "photo": "media/products/mucinex-multi-action-cold-sinus-caplets-1.jpg"}
+ ],
+ "cta_title_1": "Still have",
+ "cta_title_2": "questions?",
+ "cta_body": "Our pharmacists are happy to help you choose.",
+ "reel_hook": "3 cold and flu myths, busted",
+ "caption_instagram": "Cold and flu season: myth or fact? 🤧\n\nCold air doesn't cause a cold (viruses do), antibiotics don't work on colds or flu, and taking two cold products can double up an ingredient. Have a question about cold and flu relief in Toronto? Our North York pharmacy team can help you choose what fits your symptoms.\n\n📤 Share this with the friend who swears by the old myths, and save it for cold season.\n\n🔗 Link in bio: quiickmedicine.ca\n📍 3250 Dufferin St #6, North York\n📞 416-789-0100\n\nFor general awareness only. Follow your healthcare professional's advice.\n\n#QuiickMedicine #NorthYork #PharmacyToronto #ColdAndFlu #MythVsFact",
+ "caption_facebook": "Cold and flu season: myth or fact? 🤧\n\nCold air doesn't cause a cold (viruses do), antibiotics don't work on colds or flu, and taking two cold products can double up an ingredient. Have a question about cold and flu relief? Our North York pharmacy team can help you choose what fits your symptoms.\n\nShare this with the friend who swears by the old myths!\n\n👉 https://quiickmedicine.ca/?utm_source=facebook&utm_medium=social&utm_campaign=2026-11-04-cold-flu-myths\n📍 3250 Dufferin St #6, North York | 📞 416-789-0100\n\nFor general awareness only. Follow your healthcare professional's advice.\n\n#QuiickMedicine #NorthYork #PharmacyToronto"
+}
