@@ -38,10 +38,14 @@ CONFIRMED by the owner (OK to post):
   taking, or without a dye/ingredient someone needs to avoid. Requires a prescription; "ask us or your
   doctor if compounding could help". No specific drugs, no claims, no hormone/GLP-1 compounding.
 - Prescription delivery across Ontario.
-FROM A PUBLIC DIRECTORY LISTING, NOT YET CONFIRMED (do NOT post until moved to CONFIRMED):
-- free blister/push-through packaging; free flu and COVID-19 vaccines; travel vaccines; MedsCheck reviews;
-  minor ailment assessments and prescribing; home medical equipment rentals;
-  languages: English, Gujarati, Hindi, Marathi, Punjabi, Urdu.
+- Flu and COVID-19 vaccines at the pharmacy, free for eligible Ontarians (say "free for eligible
+  Ontarians" and "call or walk in to ask"; never promise availability or a specific vaccine product).
+- Free blister (push-through) packaging: medications sorted by day and time at no extra cost.
+- Minor ailments: our pharmacists can assess common minor ailments (e.g. pink eye, insect bites, rashes,
+  acne, urinary tract infections) and prescribe when appropriate. Don't promise a prescription.
+- MedsCheck: a one-on-one review of your medications with a pharmacist ("ask if you're eligible").
+NOT YET CONFIRMED (do NOT post until moved to CONFIRMED):
+- travel vaccines; home medical equipment rentals; languages other than English.
 
 ## Real customer reviews (social proof)
 - media/reviews.json holds real Google review excerpts. Use them ONLY verbatim from that file (no edits,
@@ -57,7 +61,8 @@ FROM A PUBLIC DIRECTORY LISTING, NOT YET CONFIRMED (do NOT post until moved to C
 - Thu: education tied to a health awareness day/month or the season
 - Fri: OTC product category spotlight
 - Sat: SERVICE post, rotating weekly: prescription transfer how-to → compounding explained →
-  "What our patients say" (reviews) → Ontario delivery / North York location. Include 1–2 matching
+  "What our patients say" (reviews) → flu/COVID shots (Oct–Jan) or blister packs → minor ailments /
+  MedsCheck → Ontario delivery / North York location. Include 1–2 matching
   review quotes as point slides when the topic fits.
 - Sun: quick tip or seasonal wellness
 
