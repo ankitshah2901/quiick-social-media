@@ -1,0 +1,37 @@
+{
+ "topic": "Diabetes Awareness Month: everyday care habits",
+ "type": "education",
+ "badge": {"line1": "November", "line2": "Diabetes Awareness"},
+ "headline": "Diabetes care:",
+ "highlight": "Daily habits",
+ "subhead": "4 simple habits worth saving.",
+ "intro": "November is Diabetes Awareness Month. These small habits can make everyday diabetes care easier.",
+ "hero_icon": "activity",
+ "photo": "media/products/onetouch-verio-test-strips-100-1.jpg",
+ "icons": [
+  {"icon": "notebook", "label": "Log your readings"},
+  {"icon": "shoe", "label": "Check your feet"},
+  {"icon": "package", "label": "Stock supplies"}
+ ],
+ "panel_title": "Diabetes supplies at Quiick",
+ "tiles": [
+  {"icon": "needle", "label": "Lancets", "photo": "media/products/onetouch-delica-plus-lancets-30g-1.jpg"},
+  {"icon": "droplet-half-2", "label": "Test strips", "photo": "media/products/onetouch-verio-test-strips-100-1.jpg"},
+  {"icon": "device-watch-heart", "label": "CGM sensors", "photo": "media/products/dexcom-g7-cgm-sensor-1.jpg"}
+ ],
+ "cta_tag": "Ask our pharmacist!",
+ "hook_tag": "Save this",
+ "points": [
+  {"icon": "notebook", "title": "Keep a simple log", "body": "Write down your readings so you and your healthcare team can spot patterns over time.", "tip": "Bring your log to appointments."},
+  {"icon": "droplet-half-2", "title": "Check your supplies", "body": "Test strips have an expiry date. Keep them in their closed container, away from heat and moisture.", "tip": "Check the date on every new box.", "photo": "media/products/onetouch-verio-test-strips-100-1.jpg"},
+  {"icon": "shoe", "title": "Look after your feet", "body": "Check your feet every day for cuts, blisters or redness, and tell your healthcare team about changes.", "tip": "Winter boots should fit well."},
+  {"icon": "report-medical", "title": "Review your medications", "body": "A MedsCheck is a one-on-one review of your medications with a pharmacist.", "tip": "Ask us if you're eligible."}
+ ],
+ "cta_title_1": "Questions about",
+ "cta_title_2": "your supplies?",
+ "cta_body": "Our pharmacists are happy to help you choose.",
+ "reel_hook": "4 diabetes habits worth saving",
+ "caption_instagram": "4 everyday diabetes habits worth saving 📝\n\nNovember is Diabetes Awareness Month in Canada. Small habits can make daily diabetes care easier: keep a simple log of your readings, check the expiry date on your test strips and store them properly, look after your feet, and review your medications with a pharmacist. Need diabetes supplies in Toronto? Our North York pharmacy carries meters, test strips, lancets and more, and our pharmacists can help you choose.\n\n💾 Save this and send it to someone managing diabetes.\n\n🔗 Link in bio: quiickmedicine.ca\n📍 3250 Dufferin St #6, North York (near Yorkdale)\n📞 416-789-0100\n\nFor general awareness only. Follow your healthcare professional's advice.\n\n#QuiickMedicine #NorthYork #PharmacyToronto #DiabetesAwarenessMonth #DiabetesCare",
+ "caption_facebook": "4 everyday diabetes habits worth saving 📝\n\nNovember is Diabetes Awareness Month in Canada. Small habits can make daily diabetes care easier: keep a simple log of your readings, check the expiry date on your test strips and store them properly, look after your feet, and review your medications with a pharmacist (ask us if you're eligible for a MedsCheck).\n\nOur North York pharmacy carries diabetes supplies like meters, test strips and lancets, and our pharmacists are happy to help you choose.\n\n👉 https://quiickmedicine.ca/?utm_source=facebook&utm_medium=social&utm_campaign=2026-11-05-diabetes-awareness-habits\n📍 3250 Dufferin St #6, North York | 📞 416-789-0100\n\nFor general awareness only. Follow your healthcare professional's advice.\n\n#QuiickMedicine #NorthYork #PharmacyToronto #DiabetesAwarenessMonth",
+ "first_comment": "Which of these 4 habits do you already do? Tell us below 👇"
+}
