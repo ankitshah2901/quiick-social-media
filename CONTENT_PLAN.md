@@ -9,9 +9,11 @@ so every post must be safe to go live as-is.
   vitamins and natural health products, diabetes supplies (meters, strips, lancets), heat and cold
   therapy, thermometers, hand sanitizer, and similar front-of-store items.
 - Talk about categories, not brands. No brand names, no specific product claims, no comparisons.
+- SERVICES may be promoted as services (see "Our services"): prescription transfers, compounding
+  (explain what it is and who it helps, never a specific compounded drug or claim), delivery.
 - Never: prescription drug names, GLP-1 / semaglutide / Ozempic / weight-loss drugs, hormone therapy,
-  compounded-medication promotion, prices, discounts, "buy now" for medications, before/after or
-  body-image content.
+  specific compounded products, prices, discounts, "buy now" for medications, before/after or
+  body-image content, opioid/methadone services.
 - No health claims ("cures", "treats", "prevents", "guaranteed"). Use "relief", "support", "help you choose".
 - No dosing advice beyond "read and follow the label" and "ask your pharmacist".
 - Every caption ends with: "For general awareness only. Follow your healthcare professional's advice."
@@ -25,13 +27,38 @@ so every post must be safe to go live as-is.
 - Delivery: prescription delivery across Ontario
 - Tagline: "Quiick Medicine – Your Health, Our Priority"
 
+## Our services
+CONFIRMED by the owner (OK to post):
+- Prescription transfers: switching is easy. The patient asks us; we contact their current pharmacy and
+  move the prescription over for them (Ontario rules let the receiving pharmacy request the transfer).
+  Patient just needs: name, date of birth, current pharmacy name/phone, which prescriptions. Call
+  416-789-0100 or visit. Do not promise timing or that every prescription can be transferred.
+- Compounding facility (non-sterile compounding): medications prepared to fit a patient's needs when a
+  commercial product doesn't, e.g. a different strength, a liquid instead of a tablet, flavoured for easier
+  taking, or without a dye/ingredient someone needs to avoid. Requires a prescription; "ask us or your
+  doctor if compounding could help". No specific drugs, no claims, no hormone/GLP-1 compounding.
+- Prescription delivery across Ontario.
+FROM A PUBLIC DIRECTORY LISTING, NOT YET CONFIRMED (do NOT post until moved to CONFIRMED):
+- free blister/push-through packaging; free flu and COVID-19 vaccines; travel vaccines; MedsCheck reviews;
+  minor ailment assessments and prescribing; home medical equipment rentals;
+  languages: English, Gujarati, Hindi, Marathi, Punjabi, Urdu.
+
+## Real customer reviews (social proof)
+- media/reviews.json holds real Google review excerpts. Use them ONLY verbatim from that file (no edits,
+  no invented reviews, no names). Show them as point slides with "quote" and "source": "Google review".
+- Good uses: Saturday service posts (transfer + transfer reviews, compounding + compounding review,
+  delivery + delivery reviews) and a "What our patients say" post about every 2 weeks.
+- Don't claim a star rating or review count in text (it changes); "5-star Google reviews" is fine.
+
 ## Weekly mix (by weekday, America/Toronto)
 - Mon: education (checklist or how-to, built to be SAVED)
 - Tue: OTC product category spotlight
 - Wed: myth vs fact (built to be SHARED)
 - Thu: education tied to a health awareness day/month or the season
 - Fri: OTC product category spotlight
-- Sat: local / service post (prescription transfers, Ontario delivery, North York location, meet the pharmacy)
+- Sat: SERVICE post, rotating weekly: prescription transfer how-to → compounding explained →
+  "What our patients say" (reviews) → Ontario delivery / North York location. Include 1–2 matching
+  review quotes as point slides when the topic fits.
 - Sun: quick tip or seasonal wellness
 
 ## What the Instagram algorithm rewards (use it every day)
@@ -42,6 +69,12 @@ so every post must be safe to go live as-is.
   "North York pharmacy", "pharmacy near Yorkdale", "Toronto pharmacy", "prescription transfer Toronto",
   "cold and flu relief Toronto". Then 3–5 hashtags max.
 - Original content only; never repost other accounts' visuals or audio.
+- Followers: the last slide and reel end already say "Follow @quiickmedicine for daily pharmacy tips".
+  Set firstCommentText on Instagram posts to a simple question that invites replies (e.g. "What's one
+  medicine question you've always wanted to ask a pharmacist? 👇"), never asking for personal health details.
+- Reel hook: the first 1.8 s decides the view. Use a concrete number or a surprising claim
+  ("3 cold myths you still believe"), set "hook_tag" (≤ 18 chars, e.g. "Myth or fact?", "Pharmacist tip",
+  "Save this"), and always give the reel a product photo or strong icon.
 
 ## Captions and links
 - Instagram caption: hook, value, keywords, a save/share prompt, "🔗 Link in bio: quiickmedicine.ca",
@@ -58,7 +91,8 @@ so every post must be safe to go live as-is.
 ## Content length limits (so the template fits)
 - headline ≤ 16 characters, highlight ≤ 14, subhead ≤ 34, intro ≤ 110
 - icon labels ≤ 18, tile labels ≤ 14, panel_title ≤ 30, cta_tag ≤ 22
-- point title ≤ 26, point body ≤ 110, tip ≤ 45, reel_hook ≤ 48, badge line2 ≤ 22
+- point title ≤ 26, point body ≤ 110, tip ≤ 45, reel_hook ≤ 40, badge line2 ≤ 22, hook_tag ≤ 18
+- a review point has "title" (≤ 30), "quote" (from media/reviews.json), "source": "Google review"; quote ≤ 230
 
 ## Topic ideas (check posts/ to avoid repeats within 30 days)
 - Questions to ask your pharmacist; reading a medication label; keeping a medication list
@@ -80,4 +114,8 @@ so every post must be safe to go live as-is.
 - Education/myth/local posts may use icons only, or product photos only when they genuinely fit.
 - Real pharmacy photos/clips the owner provides go in media/ (not media/products/); use them as
   "bg_photo" for the reel background.
-- brand/generate.py renders everything; brand/example_content.json is a complete example.
+- brand/generate.py renders everything; brand/example_content.json (product spotlight) and
+  brand/example_service_post.json (service post with a review quote) are complete examples.
+
+## Performance notes (updated by the Monday weekly report)
+- Baseline (Nov 3–4, 2026): ~185 IG followers; posts reach ~7–13 people; first reel average watch time 1.8 s of 18 s.

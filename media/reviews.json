@@ -1,0 +1,16 @@
+[
+ {"id": "delivery-address", "tags": ["delivery", "service"],
+  "quote": "Very happy with the customer service. The pharmacist contacted me and corrected the address and it came to me 2 days later. Prices are decent and delivery is quick."},
+ {"id": "compounding-loyal", "tags": ["compounding", "service", "refills"],
+  "quote": "I originally found them when I needed a compounding pharmacy for one of my medications, and now I wouldn't go anywhere else for my medication needs."},
+ {"id": "refills-friendly", "tags": ["service", "refills"],
+  "quote": "They have been incredibly helpful with my prescriptions, it's always quick easy to get through when I call them with questions or need refills, and staff there are all friendly and personable."},
+ {"id": "transfer-handled", "tags": ["transfer", "delivery", "service"],
+  "quote": "The staff were incredibly helpful and understanding. They … offered to handle the transfer process entirely."},
+ {"id": "transfer-delivery", "tags": ["transfer", "delivery"],
+  "quote": "Not only did they streamline the transfer, but they also went above and beyond by offering free evening home delivery for the medication."},
+ {"id": "online-remote", "tags": ["online", "delivery", "service"],
+  "quote": "I've been ordering from this pharmacy online for over a year, and the experience has been consistently great. They are always very helpful, responsive, and attentive, even when everything is done remotely."},
+ {"id": "super-nice", "tags": ["service", "local"],
+  "quote": "They're always super nice at this pharmacy. I appreciate the great customer service."}
+]

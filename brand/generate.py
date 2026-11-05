@@ -168,13 +168,37 @@ def cover(c, total):
 """
     return page(body, 1080, 1080, 400)
 
+STARS = '<span style="color:var(--yellow);font-family:\'DejaVu Sans\',sans-serif;letter-spacing:4px">★★★★★</span>'
+
+def quote_block(p, left, top, width, fs, dark=False):
+    col = "#fff" if dark else "var(--navy)"
+    return (f'<div style="position:absolute;left:{left}px;top:{top}px;width:{width}px;background:{"rgba(255,255,255,.08)" if dark else "#fff"};'
+            f'border-radius:28px;padding:34px 38px;box-shadow:0 14px 34px rgba(10,58,117,.14);border:3px solid {"rgba(255,255,255,.25)" if dark else "#e3eefb"}">'
+            f'<div style="font-size:{fs+8}px">{STARS}</div>'
+            f'<div style="font-family:M;font-weight:700;font-style:italic;font-size:{fs}px;line-height:1.35;color:{col};margin-top:14px">“{e(p["quote"])}”</div>'
+            f'<div style="font-weight:800;font-size:{int(fs*0.75)}px;color:{"var(--yellow)" if dark else "var(--blue)"};margin-top:16px">— {e(p.get("source","Google review"))}</div></div>')
+
 def point(c, p, n, total):
+    if p.get("quote"):
+        body = f"""
+<div class="blob" style="width:760px;height:760px;right:-260px;top:80px"></div>
+<img class="logo" src="{LOGO}" style="width:300px">
+<div class="page">{n} / {total}</div>
+<div class="hl" style="position:absolute;left:52px;top:230px;width:976px;font-size:62px">{e(p["title"])}</div>
+<div style="position:absolute;left:52px;top:318px;width:180px;height:12px;border-radius:12px;background:var(--yellow)"></div>
+{quote_block(p, 52, 370, 976, 34)}
+{band(930, 80, 27)}<div class="foot" style="top:1010px;height:70px"><span class="t" style="font-size:22px;white-space:nowrap">{TAGLINE}</span><span class="d" style="font-size:12px;max-width:none;white-space:nowrap;padding-left:12px">{DISCLAIMER}</span></div>
+"""
+        return page(body, 1080, 1080)
     tip = f'<div class="tip" style="position:absolute;left:52px;top:760px;width:976px;font-size:30px"><i class="ti">&#xea5e;</i> {e(p["tip"])}</div>' if p.get("tip") else ""
+    visual = (f'<div class="card" style="right:70px;top:220px;width:340px;height:340px;transform:rotate(3deg)"><img src="{img(p.get("photo"))}"></div>'
+              if img(p.get("photo")) else
+              f'<div style="position:absolute;right:70px;top:230px;width:330px;height:330px" class="hero"><i class="ti ti-{e(p.get("icon","check"))}" style="font-size:170px"></i></div>')
     body = f"""
 <div class="blob" style="width:760px;height:760px;right:-260px;top:80px"></div>
 <img class="logo" src="{LOGO}" style="width:300px">
 <div class="page">{n} / {total}</div>
-{(f'<div class="card" style="right:70px;top:220px;width:340px;height:340px;transform:rotate(3deg)"><img src="{img(p.get("photo"))}"></div>') if img(p.get("photo")) else (f'<div style="position:absolute;right:70px;top:230px;width:330px;height:330px" class="hero"><i class="ti ti-{e(p.get("icon","check"))}" style="font-size:170px"></i></div>')}
+{visual}
 <div class="num" style="position:absolute;left:52px;top:250px;width:110px;height:110px;font-size:60px">{n - 1}</div>
 <div class="hl" style="position:absolute;left:52px;top:390px;width:600px;font-size:68px">{e(p["title"])}</div>
 <div style="position:absolute;left:52px;top:540px;width:180px;height:12px;border-radius:12px;background:var(--yellow)"></div>
@@ -185,8 +209,8 @@ def point(c, p, n, total):
     return page(body, 1080, 1080)
 
 def closing(c, total):
-    rows = [("&#xeb09;", f"Call {PHONE}"), ("&#xeae5;", EMAIL), ("&#xeae8;", ADDRESS), ("&#xea70;", HOURS), ("&#xeb54;", WEB)]
-    rws = "".join(f'<div style="display:flex;align-items:center;gap:20px;margin-bottom:22px"><span style="display:inline-flex;width:62px;height:62px;border-radius:50%;'
+    rows = [("&#xeb09;", f"Call {PHONE}"), ("&#xeae8;", ADDRESS), ("&#xea70;", HOURS), ("&#xeb54;", WEB)]
+    rws = "".join(f'<div style="display:flex;align-items:center;gap:20px;margin-bottom:20px"><span style="display:inline-flex;width:62px;height:62px;border-radius:50%;'
                   f'background:var(--yellow);color:var(--navy);align-items:center;justify-content:center;font-size:34px" class="ti">{i}</span>{e(t)}</div>' for i, t in rows)
     body = f"""
 <div style="position:absolute;inset:0;background:linear-gradient(150deg,#0b4b93 0%,#0a3a75 60%,#072a56 100%)"></div>
@@ -194,8 +218,10 @@ def closing(c, total):
 <div class="page">{total} / {total}</div>
 <div class="hl" style="position:absolute;left:52px;top:250px;width:980px;font-size:74px;color:#fff">{e(c["cta_title_1"])}<br><span style="color:var(--yellow)">{e(c["cta_title_2"])}</span></div>
 <div style="position:absolute;left:52px;top:440px;width:960px;font-size:32px;font-weight:700;color:#dbeafe">{e(c["cta_body"])}</div>
-<div style="position:absolute;left:52px;top:540px;font-size:30px;font-weight:700;color:#fff">{rws}</div>
-<div class="tag" style="right:44px;top:250px;width:260px;font-size:40px;transform:rotate(6deg)">{e(c["cta_tag"])}</div>
+<div style="position:absolute;left:52px;top:530px;font-size:30px;font-weight:700;color:#fff">{rws}</div>
+<div style="position:absolute;left:52px;right:52px;top:880px;height:84px;border-radius:42px;background:#fff;color:var(--navy);display:flex;align-items:center;justify-content:center;gap:14px;font-weight:800;font-size:32px">
+<i class="ti" style="font-size:40px;color:var(--red)">&#xeabe;</i> Follow @quiickmedicine for daily pharmacy tips</div>
+<div class="tag" style="right:150px;top:52px;width:300px;font-size:38px;padding:14px 22px;transform:rotate(4deg)">{e(c["cta_tag"])}</div>
 <div style="position:absolute;left:0;right:0;bottom:0;height:56px;background:#fff;display:flex;align-items:center;justify-content:center;gap:20px">
 <span class="foot" style="position:static;background:none"><span class="t" style="font-size:22px">{TAGLINE}</span><span class="d" style="font-size:13px;max-width:380px">{DISCLAIMER}</span></span></div>
 """
@@ -206,24 +232,35 @@ def reel_frame(c, kind, p=None, n=0):
     bg = (f'<img src="{ph}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">'
           f'<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,42,86,.35),rgba(7,42,86,.85))"></div>') if ph else \
          '<div style="position:absolute;inset:0;background:linear-gradient(170deg,#0b5fb0 0%,#0a3a75 55%,#072a56 100%)"></div>'
-    logo = f'<div style="position:absolute;left:60px;top:90px;background:#fff;border-radius:24px;padding:16px 24px"><img src="{LOGO}" style="width:360px;display:block"></div>'
+    logo = f'<div style="position:absolute;left:60px;top:90px;background:#fff;border-radius:24px;padding:16px 24px"><img src="{LOGO}" style="width:300px;display:block"></div>'
     end = (f'<div style="position:absolute;left:60px;right:60px;top:1470px;height:170px;border-radius:28px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;'
            f'font-weight:800;font-size:34px;color:var(--navy)"><div>{PHONE} · {WEB}</div><div style="font-size:20px;font-weight:500;font-style:italic;margin-top:8px">{DISCLAIMER}</div></div>')
     if kind == "hook":
-        mid = (f'<div class="hl" style="position:absolute;left:60px;right:60px;top:560px;font-size:104px;color:#fff">{e(c["reel_hook"])}</div>'
-               + ((f'<div class="card" style="left:300px;top:930px;width:480px;height:400px;transform:rotate(-3deg)"><img src="{img(c.get("photo"))}"></div>') if img(c.get("photo")) else f'<div class="hero" style="left:340px;top:930px;width:400px;height:400px"><i class="ti ti-{e(c.get("hero_icon","pill"))}" style="font-size:200px"></i></div>') +
-               f'<div style="position:absolute;left:60px;top:1360px;font-family:K;font-size:60px;color:var(--yellow)">Watch till the end</div>')
+        # first frame must stop the scroll: huge hook up top, visual right under it, no dead space
+        visual = (f'<div class="card" style="left:240px;top:820px;width:600px;height:520px;transform:rotate(-4deg)"><img src="{img(c.get("photo"))}"></div>'
+                  if img(c.get("photo")) else
+                  f'<div class="hero" style="left:290px;top:840px;width:500px;height:500px"><i class="ti ti-{e(c.get("hero_icon","pill"))}" style="font-size:250px"></i></div>')
+        mid = (f'<div class="tag" style="left:60px;top:300px;font-size:52px;padding:14px 30px">{e(c.get("hook_tag","Pharmacist tip"))}</div>'
+               f'<div class="hl" style="position:absolute;left:60px;right:60px;top:430px;font-size:112px;color:#fff">{e(c["reel_hook"])}</div>'
+               + visual)
+    elif kind == "point" and p.get("quote"):
+        mid = (f'<div class="hl" style="position:absolute;left:60px;right:60px;top:320px;font-size:84px;color:#fff">{e(p["title"])}</div>'
+               + quote_block(p, 60, 620, 960, 52, dark=True))
     elif kind == "point":
+        visual = (f'<div class="card" style="right:60px;top:300px;width:420px;height:400px;transform:rotate(3deg)"><img src="{img(p.get("photo"))}"></div>'
+                  if img(p.get("photo")) else
+                  f'<i class="ti ti-{e(p.get("icon","check"))}" style="position:absolute;right:70px;top:440px;font-size:220px;color:rgba(255,255,255,.9)"></i>')
         mid = (f'<div class="num" style="position:absolute;left:60px;top:470px;width:150px;height:150px;font-size:84px;background:var(--yellow);color:var(--navy)">{n}</div>'
-               + ((f'<div class="card" style="right:60px;top:300px;width:420px;height:400px;transform:rotate(3deg)"><img src="{img(p.get("photo"))}"></div>') if img(p.get("photo")) else f'<i class="ti ti-{e(p.get("icon","check"))}" style="position:absolute;right:70px;top:440px;font-size:220px;color:rgba(255,255,255,.9)"></i>') +
+               + visual +
                f'<div class="hl" style="position:absolute;left:60px;right:60px;top:720px;font-size:96px;color:#fff">{e(p["title"])}</div>'
                f'<div style="position:absolute;left:60px;right:60px;top:1000px;font-size:46px;font-weight:700;line-height:1.3;color:#e6f0fb">{e(p["body"])}</div>')
     else:
-        mid = (f'<div class="hl" style="position:absolute;left:60px;right:60px;top:520px;font-size:96px;color:#fff">{e(c["cta_title_1"])}<br>'
+        mid = (f'<div class="hl" style="position:absolute;left:60px;right:60px;top:420px;font-size:96px;color:#fff">{e(c["cta_title_1"])}<br>'
                f'<span style="color:var(--yellow)">{e(c["cta_title_2"])}</span></div>'
-               f'<div style="position:absolute;left:60px;right:60px;top:880px;font-size:46px;font-weight:700;line-height:1.3;color:#e6f0fb">{e(c["cta_body"])}</div>'
-               f'<div class="tag" style="left:70px;top:1110px;width:900px;font-size:58px;padding:24px 36px">Send this to someone who needs it!</div>'
-               f'<div style="position:absolute;left:60px;top:1330px;font-size:40px;font-weight:800;color:#fff"><i class="ti">&#xeae8;</i> 3250 Dufferin St #6, North York</div>')
+               f'<div style="position:absolute;left:60px;right:60px;top:780px;font-size:46px;font-weight:700;line-height:1.3;color:#e6f0fb">{e(c["cta_body"])}</div>'
+               f'<div class="tag" style="left:70px;top:1000px;width:900px;font-size:58px;padding:24px 36px">Send this to someone who needs it!</div>'
+               f'<div style="position:absolute;left:60px;top:1230px;font-size:44px;font-weight:800;color:#fff"><i class="ti" style="color:var(--yellow)">&#xeabe;</i> Follow @quiickmedicine</div>'
+               f'<div style="position:absolute;left:60px;top:1320px;font-size:38px;font-weight:700;color:#dbeafe"><i class="ti">&#xeae8;</i> 3250 Dufferin St #6, North York</div>')
     return page(bg + logo + mid + end, 1080, 1920)
 
 def shoot(pages, out_dir):
@@ -247,16 +284,16 @@ def shoot(pages, out_dir):
     shutil.rmtree(tmp)
     return files
 
-def make_reel(frames, out, secs=3.6, fade=0.5):
+def make_reel(frames, out, durations, fade=0.35):
     fps = 30
     inputs, filters = [], []
     for i, f in enumerate(frames):
         inputs += ["-i", f]
-        # slow push-in so every frame moves
-        filters.append(f"[{i}:v]scale=1188:2112,zoompan=z='min(zoom+0.0005,1.05)':d={int(secs*fps)}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps={fps},setsar=1[v{i}]")
+        # gentle push-in so every frame moves
+        filters.append(f"[{i}:v]scale=1188:2112,zoompan=z='min(zoom+0.0007,1.05)':d={int(durations[i]*fps)}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps={fps},setsar=1[v{i}]")
     chain, last, offset = [], "v0", 0.0
     for i in range(1, len(frames)):
-        offset += secs - fade
+        offset += durations[i - 1] - fade
         chain.append(f"[{last}][v{i}]xfade=transition=slideleft:duration={fade}:offset={offset:.2f}[x{i}]")
         last = f"x{i}"
     fc = ";".join(filters + chain) + f";[{last}]format=yuv420p[out]"
@@ -278,7 +315,8 @@ def render(c, out):
             os.remove(os.path.join(out, f))
     shoot(pages, out)
     frames = [os.path.join(out, f"_reel_{k}.png") for k in ["0"] + [str(i) for i in range(1, len(c["points"]) + 1)] + ["end"]]
-    make_reel(frames, os.path.join(out, "reel.mp4"))
+    durations = [1.8] + [3.4 if p.get("quote") else 2.8 for p in c["points"]] + [3.2]
+    make_reel(frames, os.path.join(out, "reel.mp4"), durations)
     keep = sorted(f for f in os.listdir(out) if f.startswith("carousel_"))
     for f in frames:
         os.remove(f)
