@@ -1,0 +1,37 @@
+{
+ "topic": "Winter dry skin care essentials",
+ "type": "product",
+ "badge": {"line1": "November", "line2": "Dry Skin Season"},
+ "headline": "Winter-proof",
+ "highlight": "Your Skin!",
+ "subhead": "Cold air, dry heat, thirsty skin.",
+ "intro": "Indoor heating and cold winds dry skin out fast. A few basics help, and we can help you pick them.",
+ "hero_icon": "snowflake",
+ "photo": "media/products/lipikar-baume-apm-ap-max-1.jpg",
+ "icons": [
+  {"icon": "droplet", "label": "Moisturize daily"},
+  {"icon": "temperature", "label": "Warm, not hot"},
+  {"icon": "snowflake", "label": "Cover up outside"}
+ ],
+ "panel_title": "Winter skin essentials",
+ "tiles": [
+  {"icon": "droplet", "label": "Body balm", "photo": "media/products/lipikar-baume-apm-ap-max-1.jpg"},
+  {"icon": "leaf", "label": "Face cream", "photo": "media/products/toleriane-dermallergo-cream-1.jpg"},
+  {"icon": "mood-smile", "label": "Lip balm", "photo": "media/products/nutritic-lips-dry-chapped-lip-1.jpg"}
+ ],
+ "cta_tag": "Ask our pharmacist!",
+ "points": [
+  {"icon": "droplet", "title": "Moisturize after washing", "body": "Apply a cream or balm within a few minutes of bathing, while skin is still slightly damp.", "tip": "Pat dry, don't rub."},
+  {"icon": "bottle", "title": "Go richer in winter", "body": "Thicker creams and balms can feel more comforting than light lotions on dry winter skin.", "tip": "Fragrance-free suits sensitive skin.", "photo": "media/products/derma-e-vitamin-e-12000-iu-cream-113g-1.jpg"},
+  {"icon": "mood-smile", "title": "Don't forget your lips", "body": "Keep a lip balm in your pocket and apply it before heading out into the cold.", "tip": "Try not to lick dry lips."},
+  {"icon": "stethoscope", "title": "Know when to ask", "body": "If dryness turns into a rash, cracking or itching that won't settle, talk to our pharmacist.", "tip": "Rashes can be a minor ailment visit."}
+ ],
+ "cta_title_1": "Not sure what",
+ "cta_title_2": "your skin needs?",
+ "cta_body": "Our pharmacists are happy to help you choose.",
+ "reel_hook": "4 winter dry skin fixes",
+ "hook_tag": "Save this",
+ "caption_instagram": "4 winter dry skin fixes to save before the cold hits ❄️\n\nLooking for dry skin relief in Toronto? Indoor heating and cold winds pull moisture from your skin. Moisturize right after washing, switch to a richer cream or balm for winter, keep a lip balm in your pocket, and ask a pharmacist if dryness turns into a rash or cracking. Our North York pharmacy carries body balms, face creams and lip care, and we're happy to help you choose.\n\n💾 Save this for winter and send it to someone with dry hands.\n\n🔗 Link in bio: quiickmedicine.ca\n📍 3250 Dufferin St #6, North York (near Yorkdale)\n📞 416-789-0100\n\nFor general awareness only. Follow your healthcare professional's advice.\n\n#QuiickMedicine #NorthYork #PharmacyToronto #WinterSkinCare #DrySkin",
+ "caption_facebook": "4 winter dry skin fixes to save before the cold hits ❄️\n\nIndoor heating and cold winds pull moisture from your skin. A few simple habits help: moisturize right after washing, switch to a richer cream or balm for winter, keep a lip balm in your pocket, and ask a pharmacist if dryness turns into a rash or cracking.\n\nOur North York pharmacy carries body balms, face creams and lip care, and our pharmacists are happy to help you choose what suits your skin.\n\n👉 https://quiickmedicine.ca/?utm_source=facebook&utm_medium=social&utm_campaign=2026-11-06-winter-dry-skin\n📍 3250 Dufferin St #6, North York | 📞 416-789-0100\n\nFor general awareness only. Follow your healthcare professional's advice.\n\n#QuiickMedicine #NorthYork #PharmacyToronto #WinterSkinCare",
+ "first_comment": "What's your go-to move when your hands get dry in winter? Tell us below 👇"
+}
