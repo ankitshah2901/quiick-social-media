@@ -1,0 +1,36 @@
+{
+ "topic": "Prescription transfer how-to",
+ "type": "local",
+ "badge": {"line1": "Saturday", "line2": "Easy transfers"},
+ "headline": "Switching is",
+ "highlight": "Easy!",
+ "subhead": "Transfers handled for you.",
+ "intro": "Want to move your prescriptions to us? You ask, we contact your pharmacy and take care of the rest.",
+ "hero_icon": "arrows-exchange",
+ "icons": [
+  {"icon": "phone", "label": "Call or visit us"},
+  {"icon": "arrows-exchange", "label": "We contact them"},
+  {"icon": "truck-delivery", "label": "Pickup or delivery"}
+ ],
+ "panel_title": "What to have ready",
+ "tiles": [
+  {"icon": "user", "label": "Name and DOB"},
+  {"icon": "building-store", "label": "Old pharmacy"},
+  {"icon": "prescription", "label": "Which meds"}
+ ],
+ "cta_tag": "We handle it!",
+ "hook_tag": "Save this",
+ "points": [
+  {"icon": "phone", "title": "Tell us you want to switch", "body": "Call 416-789-0100 or visit us at 3250 Dufferin St #6 in North York.", "tip": "No need to call your old pharmacy."},
+  {"icon": "arrows-exchange", "title": "We contact your pharmacy", "body": "Ontario rules let the new pharmacy request the transfer, so we do the paperwork for you.", "tip": "Ask us which prescriptions can move."},
+  {"icon": "truck-delivery", "title": "Pick up or get delivery", "body": "Collect your medications in store, or ask about prescription delivery across Ontario.", "tip": "Ask about free blister packs too."},
+  {"title": "What our patients say", "quote": "The staff were incredibly helpful and understanding. They … offered to handle the transfer process entirely.", "source": "Google review"}
+ ],
+ "cta_title_1": "Ready to",
+ "cta_title_2": "switch pharmacies?",
+ "cta_body": "Call 416-789-0100 and we'll take care of the transfer.",
+ "reel_hook": "Switch pharmacies in 3 easy steps",
+ "caption_instagram": "Switching pharmacies takes 3 easy steps 📋\n\nLooking for a prescription transfer in Toronto? At our North York pharmacy near Yorkdale, you don't have to call your old pharmacy. Just tell us you want to switch, and we contact your current pharmacy and request the transfer for you. Have ready: your name and date of birth, your current pharmacy's name and phone number, and which prescriptions you'd like to move. Then pick up in store or ask about prescription delivery across Ontario.\n\n💾 Save this for later and send it to someone who's been meaning to switch.\n\n🔗 Link in bio: quiickmedicine.ca\n📍 3250 Dufferin St #6, North York (near Yorkdale)\n📞 416-789-0100\n\nFor general awareness only. Follow your healthcare professional's advice.\n\n#QuiickMedicine #NorthYork #PharmacyToronto #PrescriptionTransfer",
+ "caption_facebook": "Switching pharmacies takes 3 easy steps 📋\n\nYou don't have to call your old pharmacy. Just tell us you want to switch, and we contact your current pharmacy and request the transfer for you.\n\nHave ready: your name and date of birth, your current pharmacy's name and phone number, and which prescriptions you'd like to move. Then pick up at our North York pharmacy or ask about prescription delivery across Ontario.\n\n👉 https://quiickmedicine.ca/?utm_source=facebook&utm_medium=social&utm_campaign=2026-11-07-prescription-transfer\n📍 3250 Dufferin St #6, North York | 📞 416-789-0100\n\nFor general awareness only. Follow your healthcare professional's advice.\n\n#QuiickMedicine #NorthYork #PharmacyToronto #PrescriptionTransfer",
+ "first_comment": "What's the one thing that would make picking up your prescriptions easier? Tell us below 👇"
+}
