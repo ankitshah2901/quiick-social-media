@@ -124,3 +124,7 @@ NOT YET CONFIRMED (do NOT post until moved to CONFIRMED):
 
 ## Performance notes (updated by the Monday weekly report)
 - Baseline (Nov 3–4, 2026): ~185 IG followers; posts reach ~7–13 people; first reel average watch time 1.8 s of 18 s.
+- 2026-11-09: Week 1 (Nov 2–8): 187 IG followers (+2). Reels out-reach carousels (avg 12 vs 8); carousel reach fell all week (13 → 4).
+- 2026-11-09: Best: how-to topics (medication label reel 19 reach, transfer how-to 16 IG / 12 FB). Worst: Sunday seasonal (4 reach) and product-heavy posts.
+- 2026-11-09: 0 saves, 0 shares, 0 FB link clicks, ~0 real comments. Put the FB tracked link in the first 2 lines; first comment = one-word answer question.
+- 2026-11-09: Avg reel watch 2.8 s (up from 1.8 s); diabetes reel held 5.0 s. Lead reels with a numbered how-to promise.
