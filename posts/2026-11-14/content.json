@@ -1,0 +1,36 @@
+{
+ "topic": "What is a compounding pharmacy? Compounding explained",
+ "type": "local",
+ "badge": {"line1": "Saturday", "line2": "Compounding 101"},
+ "headline": "Made to",
+ "highlight": "Fit You!",
+ "subhead": "Compounding, explained simply.",
+ "intro": "When a standard medication doesn't fit your needs, our pharmacists can prepare one that does.",
+ "hero_icon": "flask",
+ "icons": [
+  {"icon": "adjustments", "label": "Other strengths"},
+  {"icon": "medicine-syrup", "label": "Liquid forms"},
+  {"icon": "candy", "label": "Easier flavours"}
+ ],
+ "panel_title": "Who it can help",
+ "tiles": [
+  {"icon": "mood-kid", "label": "Children"},
+  {"icon": "old", "label": "Older adults"},
+  {"icon": "alert-triangle", "label": "Sensitivities"}
+ ],
+ "cta_tag": "Ask if it could help!",
+ "hook_tag": "Did you know?",
+ "points": [
+  {"icon": "flask", "title": "What is compounding?", "body": "Preparing a medication to fit one patient's needs when a commercial product doesn't.", "tip": "It always starts with a prescription."},
+  {"icon": "medicine-syrup", "title": "Why people ask for it", "body": "A different strength, a liquid instead of a tablet, a better flavour, or no dye they need to avoid.", "tip": "Handy when pills are hard to swallow."},
+  {"icon": "stethoscope", "title": "How to get started", "body": "Ask your doctor or our pharmacists if compounding could help. A prescription is required.", "tip": "Questions? Call 416-789-0100."},
+  {"title": "What our patients say", "quote": "I originally found them when I needed a compounding pharmacy for one of my medications, and now I wouldn't go anywhere else for my medication needs.", "source": "Google review"}
+ ],
+ "cta_title_1": "Could compounding",
+ "cta_title_2": "help you?",
+ "cta_body": "Ask our pharmacists. We're happy to talk through your options.",
+ "reel_hook": "3 reasons people ask for compounding",
+ "caption_instagram": "3 reasons people ask for a compounded medication 💊\n\nLooking for a compounding pharmacy in Toronto? Our North York pharmacy near Yorkdale has a non-sterile compounding facility. Compounding means preparing a medication to fit a patient's needs when a commercial product doesn't, for example:\n1️⃣ A different strength\n2️⃣ A liquid instead of a tablet\n3️⃣ A flavour that's easier to take, or no dye or ingredient someone needs to avoid\n\nIt can help children, older adults and people with sensitivities. A prescription is required, so ask your doctor or our pharmacists if compounding could help you.\n\n💾 Save this and send it to someone who struggles with swallowing pills.\n\n🔗 Link in bio: quiickmedicine.ca\n📍 3250 Dufferin St #6, North York (near Yorkdale)\n📞 416-789-0100\n\nFor general awareness only. Follow your healthcare professional's advice.\n\n#QuiickMedicine #NorthYork #PharmacyToronto #CompoundingPharmacy",
+ "caption_facebook": "What is a compounding pharmacy? Here are 3 reasons people ask for one 💊\n👉 https://quiickmedicine.ca/?utm_source=facebook&utm_medium=social&utm_campaign=2026-11-14-compounding-explained\n\nCompounding means preparing a medication to fit a patient's needs when a commercial product doesn't, for example:\n1️⃣ A different strength\n2️⃣ A liquid instead of a tablet\n3️⃣ A flavour that's easier to take, or no dye or ingredient someone needs to avoid\n\nOur North York pharmacy has a non-sterile compounding facility. It can help children, older adults and people with sensitivities. A prescription is required, so ask your doctor or our pharmacists if compounding could help you.\n\n📍 3250 Dufferin St #6, North York | 📞 416-789-0100\n\nFor general awareness only. Follow your healthcare professional's advice.\n\n#QuiickMedicine #NorthYork #PharmacyToronto #CompoundingPharmacy",
+ "first_comment": "Before today, had you heard of a compounding pharmacy? Yes or no 👇"
+}
