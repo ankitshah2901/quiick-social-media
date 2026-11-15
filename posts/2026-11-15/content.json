@@ -1,0 +1,37 @@
+{
+ "topic": "Quick tip: how to keep a medication list",
+ "type": "education",
+ "badge": {"line1": "Sunday tip", "line2": "Medication safety"},
+ "headline": "Keep a",
+ "highlight": "Med List!",
+ "subhead": "4 steps to a list that helps you.",
+ "intro": "A current medication list helps your pharmacist and doctor give you the right advice. Here's how to make one.",
+ "hero_icon": "list-check",
+ "photo": "media/products/magnesium-bisglycinate-200-mg-1.jpg",
+ "icons": [
+  {"icon": "pencil", "label": "Write it down"},
+  {"icon": "refresh", "label": "Keep it current"},
+  {"icon": "device-mobile", "label": "Bring it along"}
+ ],
+ "panel_title": "Don't forget to include",
+ "tiles": [
+  {"icon": "bandage", "label": "Pain creams", "photo": "media/products/rub-a-535-muscle-joint-no-odour-regular-strength-cream-100-g-1.jpg"},
+  {"icon": "pill", "label": "Minerals", "photo": "media/products/magnesium-bisglycinate-200-mg-1.jpg"},
+  {"icon": "droplet", "label": "Omega-3", "photo": "media/products/nfh-trident-sap-6633-120-softgels-1.jpg"}
+ ],
+ "cta_tag": "Ask our pharmacist!",
+ "hook_tag": "Save this",
+ "points": [
+  {"icon": "pencil", "title": "List every medication", "body": "Include prescriptions, over-the-counter products, vitamins, creams and natural health products.", "tip": "Add the strength and how often you take it.", "photo": "media/products/rub-a-535-muscle-joint-no-odour-regular-strength-cream-100-g-1.jpg"},
+  {"icon": "alert-triangle", "title": "Note your allergies", "body": "Write down any allergies or side effects you've had, so they're easy to share at every visit.", "tip": "Include food and latex allergies too."},
+  {"icon": "refresh", "title": "Update it after changes", "body": "Added, stopped or changed something? Update your list the same day so it stays accurate.", "tip": "Write the date each time you update it."},
+  {"icon": "device-mobile", "title": "Keep it with you", "body": "Keep a copy in your wallet or a photo on your phone for appointments and emergencies.", "tip": "Share a copy with a family member."}
+ ],
+ "cta_title_1": "Want help with",
+ "cta_title_2": "your list?",
+ "cta_body": "Ask if you're eligible for a MedsCheck review.",
+ "reel_hook": "Make your medication list in 4 steps",
+ "caption_instagram": "Make your medication list in 4 steps 📝\n\nA quick tip from your North York pharmacy near Yorkdale: a current medication list helps your pharmacist and doctor give you the right advice, especially at a walk-in clinic or in an emergency. List every medication (prescriptions, over-the-counter products, vitamins, creams and natural health products), note any allergies, update it whenever something changes, and keep a copy on your phone or in your wallet. Want a pharmacist to go over your medications with you? Ask if you're eligible for a MedsCheck.\n\n💾 Save this and send it to someone who helps a parent with their medications.\n\n🔗 Link in bio: quiickmedicine.ca\n📍 3250 Dufferin St #6, North York (near Yorkdale)\n📞 416-789-0100\n\nFor general awareness only. Follow your healthcare professional's advice.\n\n#QuiickMedicine #NorthYork #PharmacyToronto #MedicationSafety #PharmacistTips",
+ "caption_facebook": "Make your medication list in 4 steps 📝\n👉 https://quiickmedicine.ca/?utm_source=facebook&utm_medium=social&utm_campaign=2026-11-15-medication-list\n\nA current medication list helps your pharmacist and doctor give you the right advice, especially at a walk-in clinic or in an emergency:\n✅ List every medication: prescriptions, over-the-counter products, vitamins, creams and natural health products\n✅ Note any allergies or side effects you've had\n✅ Update it the same day anything changes\n✅ Keep a copy in your wallet or a photo on your phone\n\nWant a pharmacist to go over your medications with you? Ask our North York pharmacy if you're eligible for a MedsCheck review.\n\n📍 3250 Dufferin St #6, North York | 📞 416-789-0100\n\nFor general awareness only. Follow your healthcare professional's advice.\n\n#QuiickMedicine #NorthYork #PharmacyToronto",
+ "first_comment": "Do you keep a medication list right now? Reply YES or NOT YET 👇"
+}
